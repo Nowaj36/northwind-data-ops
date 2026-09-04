@@ -1,0 +1,114 @@
+ total_rows | unique_clinicians | extra_rows 
+------------+-------------------+------------
+         64 |                60 |          4
+(1 row)
+
+ clinician_id | row_count | current_rows 
+--------------+-----------+--------------
+ CL-1004      |         2 |            1
+ CL-1018      |         2 |            1
+ CL-1029      |         2 |            1
+ CL-1045      |         2 |            1
+(4 rows)
+
+ total_audits | unique_audit_ids | unique_notes_audited | repeat_audits 
+--------------+------------------+----------------------+---------------
+         1780 |             1780 |                 1780 |             0
+(1 row)
+
+ note_id | audit_count 
+---------+-------------
+(0 rows)
+
+ total_rows | unique_note_ids | unique_ingestion_ids | unique_encounter_ids 
+------------+-----------------+----------------------+----------------------
+       6235 |            6173 |                 6235 |                 6139
+(1 row)
+
+  note_id  | row_count 
+-----------+-----------
+ NT-000651 |         2
+ NT-000702 |         2
+ NT-000709 |         2
+ NT-000717 |         2
+ NT-001001 |         2
+ NT-001071 |         2
+ NT-001073 |         2
+ NT-001174 |         2
+ NT-001299 |         2
+ NT-001513 |         2
+ NT-001520 |         2
+ NT-001628 |         2
+ NT-001725 |         2
+ NT-001751 |         2
+ NT-001973 |         2
+ NT-002094 |         2
+ NT-002117 |         2
+ NT-002124 |         2
+ NT-002507 |         2
+ NT-002585 |         2
+(20 rows)
+
+ is_void | notes 
+---------+-------
+ f       |  6145
+ t       |    90
+(2 rows)
+
+     void_reason     | notes 
+---------------------+-------
+ DUPLICATE_ENCOUNTER |    35
+ WRONG_PATIENT       |    33
+ CLINICIAN_RETRACTED |    22
+(3 rows)
+
+    status    | escalations | null_thread_ts | null_first_response 
+--------------+-------------+----------------+---------------------
+ RESOLVED     |         370 |              0 |                   0
+ OPEN         |         120 |              0 |                   0
+ PENDING_POST |          43 |             43 |                  43
+(3 rows)
+
+ rubric_version | audits 
+----------------+--------
+ v1             |    851
+ v2             |    929
+(2 rows)
+
+ rubric_version |  dimension   | weight | pass_threshold | effective_from 
+----------------+--------------+--------+----------------+----------------
+ v1             | accuracy     |    0.3 |           0.85 | 2024-01-01
+ v1             | completeness |    0.2 |           0.85 | 2024-01-01
+ v1             | formatting   |    0.1 |           0.85 | 2024-01-01
+ v1             | hpi          |    0.1 |           0.85 | 2024-01-01
+ v1             | plan         |   0.15 |           0.85 | 2024-01-01
+ v1             | ros          |   0.05 |           0.85 | 2024-01-01
+ v1             | terminology  |    0.1 |           0.85 | 2024-01-01
+ v2             | accuracy     |   0.35 |            0.9 | 2026-05-15
+ v2             | completeness |   0.25 |            0.9 | 2026-05-15
+ v2             | formatting   |   0.05 |            0.9 | 2026-05-15
+ v2             | hpi          |    0.1 |            0.9 | 2026-05-15
+ v2             | plan         |    0.1 |            0.9 | 2026-05-15
+ v2             | ros          |   0.05 |            0.9 | 2026-05-15
+ v2             | terminology  |    0.1 |            0.9 | 2026-05-15
+(14 rows)
+
+ rubric_version | dimensions | weight_total | min_threshold | max_threshold 
+----------------+------------+--------------+---------------+---------------
+ v1             |          7 |         1.00 |          0.85 |          0.85
+ v2             |          7 |         1.00 |           0.9 |           0.9
+(2 rows)
+
+  product_line  | priority | config_rows 
+----------------+----------+-------------
+ AMBIENT_ASSIST | STANDARD |           2
+ AMBIENT_ASSIST | URGENT   |           2
+ AMBIENT_LIVE   | STANDARD |           2
+ AMBIENT_LIVE   | URGENT   |           2
+(4 rows)
+
+   earliest_submit   |    latest_submit    | null_delivered | null_word_count 
+---------------------+---------------------+----------------+-----------------
+ 2026-03-25 11:46:00 | 2026-07-06 04:31:22 |              0 |             152
+(1 row)
+

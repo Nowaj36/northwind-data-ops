@@ -1,0 +1,15 @@
+rubric_version,dimension,weight,effective_from,pass_threshold
+v1,accuracy,0.3,2024-01-01,0.85
+v1,completeness,0.2,2024-01-01,0.85
+v1,formatting,0.1,2024-01-01,0.85
+v1,terminology,0.1,2024-01-01,0.85
+v1,hpi,0.1,2024-01-01,0.85
+v1,ros,0.05,2024-01-01,0.85
+v1,plan,0.15,2024-01-01,0.85
+v2,accuracy,0.35,2026-05-15,0.9
+v2,completeness,0.25,2026-05-15,0.9
+v2,formatting,0.05,2026-05-15,0.9
+v2,terminology,0.1,2026-05-15,0.9
+v2,hpi,0.1,2026-05-15,0.9
+v2,ros,0.05,2026-05-15,0.9
+v2,plan,0.1,2026-05-15,0.9

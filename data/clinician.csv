@@ -1,0 +1,65 @@
+clinician_id,clinician_name,specialty,region,home_timezone,employment_status,record_effective_from,record_effective_to,is_current_record
+CL-1001,"Okonkwo, Tobias",Family Medicine,MIDWEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1002,"Vasquez, Ingrid",Internal Medicine,NORTHEAST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1003,"Lindqvist, Mira",Cardiology,SOUTH,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1004,"Adeyemi, Bram",Orthopedics,WEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1005,"Moreau, Marcus",Pediatrics,MIDWEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1006,"Tanaka, Camille",Endocrinology,NORTHEAST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1007,"Bergstrom, Rowan",Neurology,SOUTH,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1008,"Halvorsen, Viktor",Urgent Care,WEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1009,"Sorrentino, Greta",Family Medicine,MIDWEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1010,"Marchetti, Nadia",Internal Medicine,NORTHEAST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1011,"Duplantis, Kofi",Cardiology,SOUTH,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1012,"Rasmussen, Emeka",Orthopedics,WEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1013,"Achebe, Alma",Pediatrics,MIDWEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1014,"Nkemdirim, Lena",Endocrinology,NORTHEAST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1015,"Boateng, Samir",Neurology,SOUTH,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1016,"Kowalski, Declan",Urgent Care,WEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1017,"Fontaine, Sunita",Family Medicine,MIDWEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1018,"Espinoza, Priya",Internal Medicine,NORTHEAST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1019,"Zieliński, Diego",Cardiology,SOUTH,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1020,"Hargreaves, Yusuf",Orthopedics,WEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1021,"Mbeki, Talia",Pediatrics,MIDWEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1022,"Castellanos, Ana",Endocrinology,NORTHEAST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1023,"Novak, Owen",Neurology,SOUTH,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1024,"Ferreira, Elise",Urgent Care,WEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1025,"Sandoval, Noor",Family Medicine,MIDWEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1026,"Whitfield, Ravi",Internal Medicine,NORTHEAST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1027,"Aramaki, Hiroshi",Cardiology,SOUTH,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1028,"Delacroix, Beatriz",Orthopedics,WEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1029,"Ivanova, Saskia",Pediatrics,MIDWEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1030,"Petronella, Julien",Endocrinology,NORTHEAST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1031,"Okonkwo, Lena",Neurology,SOUTH,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1032,"Vasquez, Samir",Urgent Care,WEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1033,"Lindqvist, Declan",Family Medicine,MIDWEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1034,"Adeyemi, Sunita",Internal Medicine,NORTHEAST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1035,"Moreau, Priya",Cardiology,SOUTH,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1036,"Tanaka, Diego",Orthopedics,WEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1037,"Bergstrom, Yusuf",Pediatrics,MIDWEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1038,"Halvorsen, Talia",Endocrinology,NORTHEAST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1039,"Sorrentino, Ana",Neurology,SOUTH,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1040,"Marchetti, Owen",Urgent Care,WEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1041,"Duplantis, Elise",Family Medicine,MIDWEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1042,"Achebe, Alma",Internal Medicine,NORTHEAST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1043,"Achebe, Ravi",Cardiology,SOUTH,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1044,"Nkemdirim, Hiroshi",Orthopedics,WEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1045,"Boateng, Beatriz",Pediatrics,MIDWEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1046,"Kowalski, Saskia",Endocrinology,NORTHEAST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1047,"Fontaine, Julien",Neurology,SOUTH,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1048,"Espinoza, Tobias",Urgent Care,WEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1049,"Zieliński, Ingrid",Family Medicine,MIDWEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1050,"Hargreaves, Mira",Internal Medicine,NORTHEAST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1051,"Mbeki, Bram",Cardiology,SOUTH,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1052,"Castellanos, Marcus",Orthopedics,WEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1053,"Novak, Camille",Pediatrics,MIDWEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1054,"Ferreira, Rowan",Endocrinology,NORTHEAST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1055,"Sandoval, Viktor",Neurology,SOUTH,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1056,"Whitfield, Greta",Urgent Care,WEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1057,"Aramaki, Nadia",Family Medicine,MIDWEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1058,"Delacroix, Kofi",Internal Medicine,NORTHEAST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1059,"Ivanova, Emeka",Cardiology,SOUTH,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1060,"Petronella, Alma",Orthopedics,WEST,America/Chicago,ACTIVE,2025-01-01,,true
+CL-1004,"ADEYEMI, BRAM ",Orthopedics,SOUTH,America/Chicago,ACTIVE,2024-02-01,2024-12-31,false
+CL-1018,"Espinoza, Priya",Internal Medicine,WEST,America/Chicago,ACTIVE,2024-02-01,2024-12-31,false
+CL-1029,"Ivanova,  Saskia",Pediatrics,MIDWEST,America/Chicago,ACTIVE,2024-02-01,2024-12-31,false
+CL-1045,"BOATENG, BEATRIZ",Pediatrics,NORTHEAST,America/Chicago,ACTIVE,2024-02-01,2024-12-31,false
