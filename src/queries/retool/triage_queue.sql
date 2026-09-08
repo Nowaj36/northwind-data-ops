@@ -26,6 +26,13 @@ SELECT
   c.clinician_name,
   a.audit_id,
   a.rubric_version,
+  a.score_accuracy,
+  a.score_completeness,
+  a.score_formatting,
+  a.score_terminology,
+  a.score_hpi,
+  a.score_ros,
+  a.score_plan,
   ROUND((a.score_accuracy*w.w_acc + a.score_completeness*w.w_comp
        + a.score_formatting*w.w_fmt + a.score_terminology*w.w_term
        + a.score_hpi*w.w_hpi + a.score_ros*w.w_ros
