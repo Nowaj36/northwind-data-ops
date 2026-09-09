@@ -4,14 +4,14 @@ Reconciliation of the Q2 FY26 Ambient Ops Review, a triage workbench for the
 Audit Triage Lead, and a recovery workflow for escalations that never reached
 Slack.
 
-**Headline:** the Q2 memo's numbers do not survive inspection. Audit pass rate
-is **76.8%**, not 79.9%. The delivery SLA breach rate was measured over **147
-notes out of 5,506** — 2.7% coverage — and is 10.4% over the real population,
-not 12.8%. Of 149 "open" escalations, **43 were never posted to Slack at all**.
-Of 28 flagged volume anomalies, **26 were weekends** and 2 were real.
+Headline: the Q2 memo's numbers do not survive inspection. Audit pass rate
+is 76.8%, not 79.9%. The delivery SLA breach rate was measured over 147
+notes out of 5,506 — 2.7% coverage — and is 10.4% over the real population,
+not 12.8%. Of 149 "open" escalations, 43 were never posted to Slack at all.
+Of 28 flagged volume anomalies, 26 were weekends and 2 were real.
 
-Decision A (remediation) is justified but under-scoped. **Decision B (the
-recognition award and coaching plans) should not be executed** — three named
+Decision A (remediation) is justified but under-scoped. Decision B (the
+recognition award and coaching plans) should not be executed — three named
 individuals are misplaced, including one inactive employee about to receive a
 documented coaching plan. Details in [RECONCILIATION.md](RECONCILIATION.md).
 
@@ -27,11 +27,11 @@ documented coaching plan. Details in [RECONCILIATION.md](RECONCILIATION.md).
 | [AI_USAGE.md](AI_USAGE.md) | Where AI was used, and where I overrode it |
 | [docs/adr/](docs/adr/) | Three ADRs: quarter definition, explicit commit, claim-then-process |
 
-**Retool app:** Ambient Ops Triage Workbench — released.
-**Retool workflow:** Stranded Escalation Recovery — released, version 3.0.1.
-**Video:** _(link)_
+Retool app: Ambient Ops Triage Workbench — released.
+Retool workflow: Stranded Escalation Recovery — released, version 3.0.1.
+Video_link: https://drive.google.com/file/d/1dVGEro9rtGnYhdjlWt2MHFt9mE_KdllL/view?usp=sharing
 
-> **Retool access.** The free tier does not expose per-app or per-workflow
+> Retool access. The free tier does not expose per-app or per-workflow
 > access controls — "Access controls isn't available on your plan." I could not
 > add reviewers directly. Both the app and the workflow are built and released
 > in my workspace, and I can screen-share either during the live review. If a
@@ -45,7 +45,7 @@ documented coaching plan. Details in [RECONCILIATION.md](RECONCILIATION.md).
 Prerequisites: `psql` (16+), a free Postgres (this was built on Supabase), and
 a Retool account.
 
-**1. Create the schema and load the data.**
+1. Create the schema and load the data.
 
 ```bash
 psql -d "<connection string>" -f schema.sql
@@ -67,14 +67,14 @@ Then, from inside `psql`, with the seven CSVs in `data/`:
 Expected counts: note 6,235 · note_audit 1,780 · clinician 64 · mds 34 ·
 sla_config 8 · rubric_weight 14 · escalation 533.
 
-**2. Create the tables this project adds.**
+2. Create the tables this project adds.
 
 ```bash
 psql -d "<connection string>" -f src/queries/retool/triage_decision.sql
 psql -d "<connection string>" -f src/queries/part3/escalation_repost_audit.sql
 ```
 
-**3. Reproduce the findings.**
+3. Reproduce the findings.
 
 ```bash
 psql -d "<connection string>" -f src/queries/profiling/run_all_profiling.sql
@@ -83,7 +83,7 @@ psql -d "<connection string>" -f src/queries/profiling/run_all_profiling.sql
 Every waterfall query in `src/queries/waterfall/` carries the result it produced
 in a header comment. Run them in any order; they are read-only.
 
-**4. Wire up Retool.** Add the Postgres instance as a resource, then point the
+4. Wire up Retool. Add the Postgres instance as a resource, then point the
 app's `getTriageQueue` query and the workflow's blocks at it. The SQL for both
 lives in `src/queries/` and `src/workflow/`.
 
@@ -119,25 +119,25 @@ and each query file records the result it produced when run.
 
 ## What the three parts found
 
-**Part 1.** The provided queries reproduce the memo exactly, so the memo is not
+Part 1. The provided queries reproduce the memo exactly, so the memo is not
 a transcription error — the queries are wrong. Eighteen defects, all quantified.
 The two that matter most share a root cause: rubric v2 took effect mid-quarter
 on 2026-05-15, raising the pass threshold from 0.85 to 0.90 and reweighting four
-of seven dimensions, and **the ETL was never updated for either change**. It
+of seven dimensions, and the ETL was never updated for either change. It
 scores v2 audits with v1 weights (234 audits, understated by 0.0216 on average)
 and judges them against the v1 threshold (143 audits marked PASS that v2 fails).
 
 These two corrections move the pass rate in *opposite* directions — −8.1 and
-+5.4 points. Fixing only the threshold lands at 71.6%, which is **further from
-the truth than the original 79.9%**. A partial fix is worse than no fix.
++5.4 points. Fixing only the threshold lands at 71.6%, which is further from
+the truth than the original 79.9%. A partial fix is worse than no fix.
 
-**Part 2.** A single-screen workbench, queue derived from the corrected logic,
+Part 2. A single-screen workbench, queue derived from the corrected logic,
 with a provenance panel showing the rubric version, the threshold that applied
 to that note, all seven sub-scores, and the SLA target in force on the note's
 own date rather than today's. Nine of ten hard requirements met; R3 (keyboard
 operation) is not, and why is in UX_RATIONALE.md §4.
 
-**Part 3.** The 43 stranded escalations name their own cause: every one carries
+Part 3. The 43 stranded escalations name their own cause: every one carries
 `slack_api:ratelimited (HTTP 429)` with `attempt_count = 1`, clustered into two
 windows — 24 records on 2026-05-07 between 14:00 and 14:05, and 19 on
 2026-06-11 between 09:00 and 09:04. The pipeline took a 429 as terminal and
@@ -157,31 +157,31 @@ work.
 
 Not built, in the order I would build them:
 
-1. **W6 hardening — a reclaim path for stale `POSTING` rows.** The claim
+1. W6 hardening — a reclaim path for stale `POSTING` rows. The claim
    pattern is safe against concurrency but not against a crashed run: a workflow
    that dies mid-batch strands records in `POSTING` with nothing to pick them
    up. That is the same silent-failure shape as the bug being fixed, relocated.
    Needs a `claimed_at` column and a reclaim predicate. ~30 min.
-2. **W4 — jitter and exponential backoff.** Currently a fixed 1s iteration
+2. W4 — jitter and exponential backoff. Currently a fixed 1s iteration
    delay, which holds the ≤1 req/sec budget but does nothing on 429/5xx.
    `delay = min(2^attempt * 1000, 30000)` plus up to 500ms of jitter, retrying
    only 429 and 5xx and letting 4xx fail fast. Jitter matters specifically here:
    the outage being recovered from hit 43 records in two tight windows, and
    identical retry timing across a fleet reproduces the herd that caused it.
    ~30 min.
-3. **W5 — dead-lettering.** After three attempts, `status = 'DEAD_LETTER'` with
+3. W5 — dead-lettering. After three attempts, `status = 'DEAD_LETTER'` with
    the last HTTP status, surfaced as a second queue in the workbench. N=3
    because the observed failure is transient rate limiting, which three attempts
    across ~7 seconds of backoff clears; a malformed payload fails identically
    three times and belongs in front of a human rather than in a retry loop.
    ~30 min.
-4. **Reversible dispositions.** The unique index on `triage_decision(note_id)`
+4. Reversible dispositions. The unique index on `triage_decision(note_id)`
    that makes bulk commit idempotent also blocks corrections, which contradicts
    Compliance's requirement (R-04). Fix is a partial unique index on
    `(note_id) WHERE superseded_at_utc IS NULL` — the same pattern already used
    in `escalation_repost_audit`. This is a bug, not a trade; see DECISIONS.md
    Conflict 4. ~20 min.
-5. **Unit tests and CI.** The four boundaries named in 6.3 — the Chicago
+5. Unit tests and CI. The four boundaries named in 6.3 — the Chicago
    business-day boundary, the deduplication rule, the effective-dated lookup,
    and the idempotency key. Each has an obvious edge case: a note at 23:30
    Chicago on 30 June, a `note_id` whose two ingestions share a timestamp, a
