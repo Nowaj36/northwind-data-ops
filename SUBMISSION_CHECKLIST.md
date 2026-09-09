@@ -3,7 +3,7 @@
 Fill this in, commit it, and confirm every line before you submit. An unfilled
 checklist is treated as an incomplete submission.
 
-Candidate: Nowaj Chowdhury  Date submitted: 2026-09-09  Hours spent (honest): ~10
+Candidate: Nowaj Chowdhury  Date submitted: 2026-09-10  Hours spent (honest): ~12
 
 Legend: `[x]` done · `[~]` partially done, explained · `[ ]` not done, explained
 
@@ -16,7 +16,7 @@ Legend: `[x]` done · `[~]` partially done, explained · `[ ]` not done, explain
 - [x] Retool app shared with shakira.mustahid@commure.com _(named in the brief, not on this checklist)_
 - [x] A Retool Release version is tagged — workflow at 3.0.1
 - [x] GitHub repo accessible to both reviewers — URL: https://github.com/nowaj36/northwind-data-ops
-- [ ] Video link (≤12 min, single take, screen + voice): __________
+- [ ] Video link (≤12 min, single take, screen + voice): https://drive.google.com/file/d/1dVGEro9rtGnYhdjlWt2MHFt9mE_KdllL/view?usp=sharing
 
 Workflow sharing is blocked. Retool's free tier does not expose access
 controls on workflows — "Access controls isn't available on your plan." The app
